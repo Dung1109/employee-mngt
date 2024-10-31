@@ -1,14 +1,16 @@
 package org.andy.employee_be.entities;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import org.andy.employee_be.enums.Status;
 
 @Getter
 @Setter
 @Entity
 @Table(name = "account")
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

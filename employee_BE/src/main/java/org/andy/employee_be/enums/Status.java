@@ -2,8 +2,8 @@ package org.andy.employee_be.enums;
 
 public enum Status {
 
-    ACTIVE(1),
-    INACTIVE(2);
+    ACTIVE(0),
+    INACTIVE(1);
 
     private final int value;
 

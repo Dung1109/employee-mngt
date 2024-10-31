@@ -1,0 +1,99 @@
+### GET request to example server
+GET http://localhost:8080/api/employees/1
+
+### GET request to example server
+GET http://localhost:8080/api/employees/2
+
+### GET request to example server
+GET http://localhost:8080/api/employees/3
+
+### GET request to example server
+GET http://localhost:8080/api/employees
+
+### GET request to example server
+GET http://localhost:8080/api/employees
+
+### GET request to example server
+GET http://localhost:8080/api/accounts
+
+### GET request to example server
+GET http://localhost:8080/api/accounts/1
+
+### GET request to example server
+GET http://localhost:8080/api/accounts/2
+
+### GET request to example server
+GET http://localhost:8080/api/accounts/3
+
+### GET request to example server
+DELETE http://localhost:8080/api/employees/2
+
+### GET request to example server
+DELETE http://localhost:8080/api/accounts/6
+
+### POST
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+
+{
+  "account": "leuleu9",
+  "email": "admin9@leu.com",
+  "password": "leuleuaaadsasd",
+  "status": "1",
+  "employeeId": "1"
+}
+
+### POST
+PUT http://localhost:8080/api/accounts/6
+Content-Type: application/json
+
+{
+  "account": "leuleu4",
+  "email": "admin4@leu.com",
+  "password": "thanhto",
+  "status": "1",
+  "employee-id": "1"
+}
+
+### POST
+PATCH http://localhost:8080/api/accounts/2
+Content-Type: application/json
+
+{
+  "password": "adminne"
+}
+
+### DELETE
+DELETE http://localhost:8080/api/accounts/3
+Content-Type: application/json
+
+###
+DELETE localhost:8080/account/delete?employeeId=Nate
+
+
+### POST
+POST http://localhost:8080/api/employees
+Content-Type: application/json
+
+{
+  "firstName": "Thubede",
+  "lastName": "Akali",
+  "phoneNumber": "1234567890",
+  "dateOfBirth": "1990-01-01",
+  "gender": 1,
+  "account": "admin",
+  "email": "admin@example.com",
+  "password": "admin",
+  "address": "123 Main St",
+  "department": "IT",
+  "remark": "Lorem ipsum dolor sit amet"
+}
+
+###
+POST http://172.27.4.234:8080/chat
+Content-Type: multipart/form-data
+
+{
+  "name": "John Doe",
+  "messges": "Hello World"
+}

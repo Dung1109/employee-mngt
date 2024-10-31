@@ -1,0 +1,21 @@
+package org.andy.employee_be.config;
+
+import org.andy.employee_be.entities.Account;
+import org.andy.employee_be.entities.Employee;
+import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
+import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
+import org.springframework.stereotype.Component;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+
+@Component
+public class RestConfiguration implements RepositoryRestConfigurer {
+
+    @Override
+    public void configureRepositoryRestConfiguration(
+            RepositoryRestConfiguration config, CorsRegistry cors) {
+        config.exposeIdsFor(Account.class);
+        config.exposeIdsFor(Employee.class);
+    }
+
+
+}

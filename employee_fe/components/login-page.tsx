@@ -11,7 +11,7 @@ import {Button} from '@/components/ui/button'
 import {Form, FormControl, FormField, FormItem, FormLabel, FormMessage} from '@/components/ui/form'
 import {Loader2, Lock, User} from 'lucide-react'
 import Link from "next/link";
-import {redirect, useRouter} from "next/navigation";
+import {useRouter} from "next/navigation";
 
 const loginSchema = z.object({
     account: z.string().min(1, 'Username is required'),
